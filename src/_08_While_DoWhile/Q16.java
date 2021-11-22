@@ -7,7 +7,7 @@ public class Q16 {
 
         // --------GİRİLEN SAYININ BASAMAKLARINDAKİ RAKAMLARIN TOPLAMINI BULUNUZ.
 
-
+    
     }
 
 }

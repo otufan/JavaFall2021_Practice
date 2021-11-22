@@ -1,4 +1,4 @@
-package practice_01;
+package _01_practice;
 
 public class C01_Example {
 

@@ -13,8 +13,21 @@ public class Q14 {
 
 		 */
 
+		String input="Congratulations";
 		
+		String arr[]=input.split("");
 		
+		System.out.println(Arrays.toString(arr));
+		
+		for (int i = 0; i < arr.length; i++) {
+
+			if (arr[i].equals("o") || arr[i].equals("a") || arr[i].equals("u")) { arr[i]="i";
+				
+			}
+			
+		}
+		
+		System.out.println(Arrays.toString(arr));
 		
 	}
 

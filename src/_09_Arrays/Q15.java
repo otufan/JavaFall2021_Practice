@@ -9,6 +9,16 @@ public class Q15 {
         int []arr={2,6,4,8,2,6,2};
          */
 
+		int arr[]={2,6,4,8,2,6,2};
+		
+		if (arr[arr.length-1]==arr[0]) { System.out.println("ilk eleman ile son eleman aynidir");
+			
+		} else { System.out.println("ilk eleman ve son eleman ayni DEGILDIR");
+
+		}
+		
+		
+		
 	}
 
 }

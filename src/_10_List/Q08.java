@@ -18,8 +18,17 @@ public class Q08 {
          */
 
 
+    	List <String> list1=new ArrayList <> (Arrays.asList("Umit","Emin","Kemal","Kerem","Taylan","Orhan","Sinan","Furkan","Ahmet","Ali"));
 
+    
+    	String arr[]=new String[1];
+    	arr[0]=list1.get(2);
+    	
+    	list1.set(2, list1.get(7));
+    	list1.set(7, arr[0]);
+    	
 
+    	System.out.println(list1);
     }
 
 }

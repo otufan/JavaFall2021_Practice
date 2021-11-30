@@ -87,6 +87,7 @@ public class QManav {
 				
 			} else {System.out.println("Hatali Giris!!! Lutfen E veya H tusunu tuslayiniz");
 			finish=scan.next();
+			
 				
 			}
 			

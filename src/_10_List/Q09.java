@@ -35,7 +35,7 @@ public class Q09 {
     	
     	int say=0;
     	int max=0;
-    	int index=0;
+    	String krktr=null;
     	
     	for (int i = 0; i < lst.size(); i++) {
     		say=0;
@@ -43,16 +43,17 @@ public class Q09 {
     			if (lst.get(i).contains(lst.get(j))) {say++;
 					
 				}
-				
+    			
     			if (say>max) { max=say;
-    							index=i;
+    							krktr=lst.get(i);
 					
-				}
+				} 
+				
 			}
 			
 		}
     	
-    	System.out.println("Girilen string deger de en cok gecen karakter : <<<< " +lst.get(index) + " >>>>> toplam : " + max + " adet vardir");
+    	System.out.println("Girilen string deger de en cok gecen karakter : <<<< " +krktr + " >>>>> toplam : " + max + " adet vardir");
     	scan.close();
     }
 }

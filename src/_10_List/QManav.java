@@ -32,16 +32,18 @@ public class QManav {
 		System.out.println("***		4- Kiraz 		***");
 		System.out.println("***		5- Uzum			***");
 	
-		double elma=1.5;
-		double armut=2;
-		double muz=3.5;
-		double kiraz=5;
-		double uzum=2.5;
+		List<Double> urunListesi=new ArrayList <>();
+		urunListesi.add(1.5);
+		urunListesi.add(2.0);
+		urunListesi.add(3.5);
+		urunListesi.add(5.0);
+		urunListesi.add(2.5);
 		
 		String finish="K";
 		int tercih=0;
 		double miktar=0;
 		double toplamFiyat=0;
+		
 		
 		
 		while (!finish.substring(0,1).toLowerCase().contains("h")) {
@@ -54,27 +56,32 @@ public class QManav {
 				
 				System.out.print("Lutfen alacaginiz elma miktarini giriniz :");
 				miktar=scan.nextDouble();
-				toplamFiyat+=(elma*miktar);
+				System.out.println("Urunun kilo fiyati " + urunListesi.get(tercih-1) + " Eurodur. Urunun toplam tutari ise " + (urunListesi.get(tercih-1)*miktar + " Eurodur.") );
+				toplamFiyat+=(urunListesi.get(tercih-1)*miktar);
 				break ;
 			case 2: 
 				System.out.print("Lutfen alacaginiz armut miktarini giriniz :");
 				miktar=scan.nextDouble();
-				toplamFiyat+=(armut*miktar);
+				System.out.println("Urunun kilo fiyati " + urunListesi.get(tercih-1) + " Eurodur. Urunun toplam tutari ise " + (urunListesi.get(tercih-1)*miktar + " Eurodur.") );
+				toplamFiyat+=(urunListesi.get(tercih-1)*miktar);
 				break;
 			case 3: 
 				System.out.print("Lutfen alacaginiz muz miktarini giriniz :");
 				miktar=scan.nextDouble();
-				toplamFiyat+=(muz*miktar);
+				System.out.println("Urunun kilo fiyati " + urunListesi.get(tercih-1) + " Eurodur. Urunun toplam tutari ise " + (urunListesi.get(tercih-1)*miktar + " Eurodur.") );
+				toplamFiyat+=(urunListesi.get(tercih-1)*miktar);
 				break;
 			case 4: 
 				System.out.print("Lutfen alacaginiz kiraz miktarini giriniz :");
 				miktar=scan.nextDouble();
-				toplamFiyat+=(kiraz*miktar);
+				System.out.println("Urunun kilo fiyati " + urunListesi.get(tercih-1) + " Eurodur. Urunun toplam tutari ise " + (urunListesi.get(tercih-1)*miktar + " Eurodur.") );
+				toplamFiyat+=(urunListesi.get(tercih-1)*miktar);
 				break;
 			case 5: 
 				System.out.print("Lutfen alacaginiz uzum miktarini giriniz :");
 				miktar=scan.nextDouble();
-				toplamFiyat+=(uzum*miktar);
+				System.out.println("Urunun kilo fiyati " + urunListesi.get(tercih-1) + " Eurodur. Urunun toplam tutari ise " + (urunListesi.get(tercih-1)*miktar + " Eurodur.") );
+				toplamFiyat+=(urunListesi.get(tercih-1)*miktar);
 				break;
 			default:
 		        System.out.println("Hatali secim yaptiniz");
@@ -100,9 +107,4 @@ public class QManav {
 		
 			}
 			
-		
-		
-		
-		
-	
 }

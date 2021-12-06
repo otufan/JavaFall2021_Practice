@@ -26,7 +26,7 @@ public class Runner {
 		
 		
 		case "1":
-			register=(ArrayList<User>)userReg.register();
+			register=(ArrayList<User>) userReg.register();
 			break;
 		case "2":
 			userReg.listele(register);

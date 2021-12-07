@@ -36,5 +36,11 @@ public class JavaMarket {
 		 * 7. Eğer bitirmek istiyorsa ödemeyi kontrol edip para ustu hesaplayarak  programı bitirinzi.
 		 */
 		
+		
+		
+		
+		
+		
+		
 	}
 }

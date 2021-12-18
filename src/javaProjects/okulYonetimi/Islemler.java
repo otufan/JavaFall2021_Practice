@@ -1,45 +1,119 @@
 package javaProjects.okulYonetimi;
 
-/*
-	BİR OKUL YÖNETİM PLATFORMU KODALYINIZ.
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
-	1.	Bu programda, Öğrenci ve Öğretmen Kayıtları ile ilgili işlemler yapılabilmelidir.
-		Kayıtlarda şu bilgiler olabilmelidir.
+import _11_dateTime.HaftaninSorusu.User;
 
-		Öğretmen: Ad-Soyad,  kimlik No, yaş, bölüm, ve sicil No bilgileri içermelidir.
-		Öğrenci: Ad-Soyad,  kimlik No, yaş, numara, sınıf bilgileri içermelidir.
+public class Islemler implements Ogrenci,Ogretmen{
 
-	2.	Program başladığında Kullanıcıya, Öğretmen ve Öğrenci işlemlerini seçebilmesi için
-		Aşağıdaki gibi bir menü gösterilsin.
+	String adSoyad;
+	int kimlikNo;
+	int yas;
+	List<Islemler> listeOgrenci=new ArrayList<>();
+	List<Islemler> listeOgretmen=new ArrayList<>();
+	Scanner scan=new Scanner(System.in);
+	Islemler(){
+		
+	}
+	
+	Islemler(String adSoyad, String kimlikNo, int yas, String SicilnumaraOkulNumara, String sinifBolum){
+		
+		
+	}
+	
+	public List<Islemler> eklemeOgrenci() {
+		
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Lutfen ad soyad bilgisini giriniz: ");
+		String adSoyad=scan.nextLine();
+		System.out.print("Lutfen kimlik numarasini giriniz: ");
+		String kimlikNo=scan.nextLine();
+		System.out.print("Lutfen yasi giriniz: ");
+		int yas=scan.nextInt();
+				
+		Islemler user=new Islemler(adSoyad, kimlikNo, yas, ogrenciNumara(), ogrenciSinif());
+		listeOgrenci.add(user);
+		return listeOgrenci;
+	}
+	
+	public List<Islemler> eklemeOgretmen() {
+	
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Lutfen ad soyad bilgisini giriniz: ");
+		String adSoyad=scan.nextLine();
+		System.out.print("Lutfen kimlik numarasini giriniz: ");
+		String kimlikNo=scan.nextLine();
+		System.out.print("Lutfen yasi giriniz: ");
+		int yas=scan.nextInt();
+				
+		Islemler user=new Islemler(adSoyad, kimlikNo, yas, ogretmenSicilNo(), ogretmenBolum());
+		listeOgretmen.add(user);
+		return listeOgretmen;
+	}
+	
+	public static String anaSecim() {
+		String secim=null;
+		Scanner scan=new Scanner(System.in);
+    	System.out.print("Lutfen giris yapmak istediginiz menuyu seciniz : ");
+    	String giris=scan.nextLine();
+    	while(!giris.contains("1")&&!giris.contains("2")&&!giris.toLowerCase().contains("q")) {
+    	System.out.println("Hatali giris yaptiniz \nLutfen tekrar giris yapiniz :");
+    	giris=scan.nextLine();
+		} 
+    	
+    	secim=giris;
+    			
+    	return secim;
+		
+	}
+	
+	public static void secim(String secim) {
+		
+		if (secim.contains("1")||secim.contains("2") ) { 
+			
+			System.out.println("======Islemler======");
+			System.out.println("1- Ekleme ");
+			System.out.println("2- Arama");
+			System.out.println("3- Listeleme");
+			System.out.println("4- Silme");
+			System.out.println("5-Ana Menu");
+			System.out.println("Q- Cikis");
+			
+			
+		} else if (secim.toLowerCase().contains("q")) {
+		
+		System.out.println("Cikis isleminiz basarili bir sekilde gerceklestirilmistir!");
+			
+		} 
+		
+	}
+	
+	@Override
+	public String ogretmenSicilNo() {
+		String ogretmenSicilNo=scan.nextLine();
+		return ogretmenSicilNo;
+	}
 
-	====================================
-	 ÖĞRENCİ VE ÖĞRETMEN YÖNETİM PANELİ
-	====================================
-	 1- ÖĞRENCİ İŞLEMLERİ
-	 2- ÖĞRETMEN İŞLEMLERİ
-	 Q- ÇIKIŞ
+	@Override
+	public String ogretmenBolum() {
+		String ogretmenBolum=scan.nextLine();
+		return ogretmenBolum;
+	}
 
-	3.	Seçilen Kişi türüne göre aşağıdaki işlemleri gösteren bir alt menü daha gösterilsin.
+	@Override
+	public String ogrenciNumara() {
+		String ogrenciNumara=scan.nextLine();
+		return ogrenciNumara;
+	}
 
-	============= İŞLEMLER =============
-		 1-EKLEME
-		 2-ARAMA
-		 3-LİSTELEME
-		 4-SİLME
-		 5-ANA MENÜ
-		 Q-ÇIKIŞ
-
-	SEÇİMİNİZ:
-
-	4.	İşlemler menüsünde seçilen işleme göre bir önceki menüde seçilen Kişi türü ile ilgili
-	    ekleme, kimlik no ile silme ve arama, var olan tüm kişileri listeleme gibi işlemler yapılabilmelidir.
-		Bunun yanında bir üst menüye dönme veya çıkış işlemleri de yapılabilmelidir.
-
- */
-
-
-
-public class Islemler {
+	@Override
+	public String ogrenciSinif() {
+		String ogrenciSinif=scan.nextLine();
+		return ogrenciSinif;
+	}
 
 
 

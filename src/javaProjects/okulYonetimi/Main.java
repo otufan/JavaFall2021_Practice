@@ -1,28 +1,11 @@
 package javaProjects.okulYonetimi;
 
-import java.util.Scanner;
+import static javaProjects.okulYonetimi.Islemler.anaMenu;
 
-public class Main extends Islemler {
-	
-	static{
-		System.out.println("==========================================");
-		System.out.println("----Ogrenci ve Ogretmen Yonetim Paneli----");
-		System.out.println("==========================================");
-		System.out.println("---> 1- Ogrenci Islemleri         --------");
-		System.out.println("---> 2- Ogretmen Islemleri        --------");
-		System.out.println("---> Q- Cikis                     --------");
-		
-	}
+public class Main {
     public static void main(String[] args) {
-    	
-    
-    	Scanner scan=new Scanner(System.in);
-    	
-    	secim(anaSecim());
-    	
-    	
-    	
-
+       // Islemler islemler = new Islemler(); // obj create edildi
+       anaMenu(); //Islemler class import edilerek  obj create edilmeden anaMenu() method call edildi.
     }
 
 

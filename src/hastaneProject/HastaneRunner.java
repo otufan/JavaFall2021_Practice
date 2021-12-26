@@ -4,15 +4,12 @@ import javaProjects.hastaneOtomasyon.Durum;
 
 public class HastaneRunner {
 
-	//String hastaDurumu;
-	//String unvan;
 	static VeriBankasi veri=new VeriBankasi();
-	
-	
+		
 	public static void main(String[] args) {
 	
 		
-		String hastaDurumu="Diabet";
+		String hastaDurumu="Allerji";
 		String unvan=doktorUnvan(hastaDurumu);
 		System.out.println("Hasta Sikayeti : " + hastaDurumu);
 		if (hastaDurumuBul(hastaDurumu)) {
@@ -33,7 +30,7 @@ public class HastaneRunner {
 
 	public static String doktorUnvan(String aktuelDurum) {
 		Doktor doktor=new Doktor();
-		VeriBankasi veri=new VeriBankasi();
+		//VeriBankasi veri=new VeriBankasi();
 		
 		for (int i = 0; i < veri.durumlar.length; i++) {
 			

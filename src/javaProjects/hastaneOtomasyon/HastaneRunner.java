@@ -1,6 +1,7 @@
 package javaProjects.hastaneOtomasyon;
 public class HastaneRunner {
-    private static Hastane hastane = new Hastane();
+    
+	private static Hastane hastane = new Hastane();
     
     
     public static void main(String[] args) {

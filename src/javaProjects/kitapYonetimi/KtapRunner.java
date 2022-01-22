@@ -22,13 +22,13 @@ public class KtapRunner extends KitapMethod{
 			System.out.print("Lutfen yapmak istediginiz islem numarasini giriniz :");
 			islemNo=scan.nextInt();
 			System.out.println(islem.menu);
-			runner.islem(islemNo);
+			
 			
 		
 			System.out.print("Lutfen yapmak istediginiz islem numarasini giriniz :");
 			islemNo=scan.nextInt();
 			System.out.println(islem.menu);
-			runner.islem(islemNo);
+			
 		
 		  
 	}

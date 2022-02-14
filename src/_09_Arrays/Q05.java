@@ -1,5 +1,7 @@
 package _09_Arrays;
 
+
+
 public class Q05 {
 
 	public static void main(String[] args) {
@@ -12,8 +14,40 @@ public class Q05 {
 		 * Output : 4
 		 */
 		
+		int[] arr={1,2,3,4,5,6,7} ;
+		
+		System.out.println(avgArr(arr));
+		greaterThanAvg(arr);
+		
+		
+		
+		
 
 		}
+
+	private static void greaterThanAvg(int[] arr) {
+		
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i]>avgArr(arr)) {
+		
+				System.out.print(arr[i]+" ");
+		}
+			
+		}
+		 
+	}
+
+	private static double avgArr(int[] arr) {
+		
+		int toplam=0;
+	
+		for (int i = 0; i < arr.length; i++) {
+			toplam+=arr[i];
+		}
+
+		return toplam/arr.length;
+		
+	}
 		
 	}
 

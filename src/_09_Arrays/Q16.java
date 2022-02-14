@@ -28,7 +28,7 @@ public class Q16 {
     	
     	
     	System.out.println(Arrays.toString(arr) + " parametrelerinde bulunan sayilarin toplami :" + arraysToplama(arr));
-    	
+    	scan.close();
     }
 
 	public static int arraysToplama(String[] arr) {

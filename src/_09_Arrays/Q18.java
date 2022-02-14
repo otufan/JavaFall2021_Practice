@@ -1,7 +1,7 @@
 package _09_Arrays;
 
-import java.util.Scanner;
-import java.util.ArrayList;
+
+
 import java.util.Arrays;
 public class Q18 {
 

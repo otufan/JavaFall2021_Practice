@@ -2,7 +2,7 @@ package javaProjectAuto;
 
 public abstract class Auto {
 
-	String farbe = null;
+	protected String farbe = null;
 	private int baujahr = 0;
 
 	public Auto() {
@@ -41,7 +41,11 @@ public abstract class Auto {
 
 	}
 	
-	public abstract String bremsen();
+	public String bremsen() {
+		
+		return "das Auto bremst";
+		
+	}
 	
 	public String fahren() {
 		
@@ -52,7 +56,7 @@ public abstract class Auto {
 	@Override
 	public String toString() {
 		
-		return "{Farbe=" + farbe + ", Baujahr=" + baujahr+", Bremsen="+bremsen()+", Fahren= "+fahren()+ "}";
+		return "{ "+getClass().getSimpleName() +", Farbe=" + farbe + ", Baujahr=" + baujahr+", Bremsen="+bremsen()+", Fahren= "+fahren()+ "}";
 	}
 	
 	

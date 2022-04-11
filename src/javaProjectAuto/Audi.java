@@ -3,12 +3,13 @@ package javaProjectAuto;
 public class Audi extends Auto {
 
 	Audi() {
+		setFarbe("Weiß");
 
 	}
 
 	Audi(int baujahr) {
 		setFarbe("Weiß");
-		if (baujahr >= 1910 && baujahr <= 2022) {
+		if (baujahr >= 1950 && baujahr <= 2022) {
 			setBaujahr(baujahr);
 		} else {
 			setBaujahr(0);
@@ -35,7 +36,7 @@ public class Audi extends Auto {
 			super.farbe = "Weiß";
 	}
 
-	@Override
+	
 	public String bremsen() {
 
 		return "Auto bremst mit Bremskraftverstärker";

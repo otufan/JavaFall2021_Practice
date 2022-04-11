@@ -69,7 +69,7 @@ public class Fahrzeug {
 
 	@Override
 	public String toString() {
-		return "Position=" + position + ", Geschwindigkeit=" + geschwindigkeit + ", Max Geschwindigkeit="
+		return "Position=" + position + ", Geschwindigkeit=" + geschwindigkeit + ", max Geschwindigkeit="
 				+ maxGeschwindigkeit + ", Anzahl der Räder=" + anzahlRaeder;
 	}
 

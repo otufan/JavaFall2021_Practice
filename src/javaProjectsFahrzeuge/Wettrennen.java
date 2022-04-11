@@ -26,6 +26,8 @@ public class Wettrennen {
 				auto.getPosition(), 
 				rennwagen.getPosition(), 
 				krankenwagen.getPosition());
+		
+		System.out.println("\nFahrad \t\t: " + fahrrad + "\nAuto \t\t: " + auto + "\nRennwagen \t: " + rennwagen + "\nKrankenwagen \t: " + krankenwagen);
 
 	}
 

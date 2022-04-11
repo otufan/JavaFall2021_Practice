@@ -3,6 +3,7 @@ package javaProjectAuto;
 public class BMW extends Auto {
 
 	BMW() {
+		setFarbe("Weiß");
 
 	}
 
@@ -35,7 +36,7 @@ public class BMW extends Auto {
 			super.farbe = "Weiß";
 	}
 
-	@Override
+	
 	public String bremsen() {
 
 		return "Auto bremst mit Bremskraftverstärker";

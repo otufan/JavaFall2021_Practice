@@ -6,16 +6,16 @@ public class Rennwagen extends Auto {
 		setPosition(0);
 		setGeschwindigkeit(0);
 		maxGeschwindigkeit(220);
-		setAnzahlRaeder(0);
+		
 
 	}
 
-	public Rennwagen(double position, double geschwindigkeit, int anzahlRaeder) {
+	public Rennwagen(double position, double geschwindigkeit) {
 
 		setPosition(position);
 		setGeschwindigkeit(geschwindigkeit);
 		maxGeschwindigkeit(140);
-		setAnzahlRaeder(anzahlRaeder);
+		
 	}
 
 }

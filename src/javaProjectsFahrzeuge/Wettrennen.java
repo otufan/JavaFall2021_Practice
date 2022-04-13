@@ -15,6 +15,7 @@ public class Wettrennen {
 		krankenwagen.setGeschwindigkeit(80);
 
 		fahrrad.bewege(240);
+		fahrrad.bewege(240);
 		auto.bewege(60);
 		rennwagen.bewege(60);
 		krankenwagen.bewege(60);

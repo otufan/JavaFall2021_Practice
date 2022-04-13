@@ -1,6 +1,6 @@
 package periodensystem;
 
-public class Metall {
+public class Metall extends Element {
 
 	private boolean halbmetall; // true, wenn es sich um ein Halbmetall handelt
 	private double leitfaehigkeit;
@@ -9,11 +9,19 @@ public class Metall {
 		
 	}
 
-	public Metall(boolean halbmetall, double leitfaehigkeit) {
 
+	public Metall(String symbol, String name,  int kernladungszahl, char schale, int aggregat, boolean hauptgruppe,
+			boolean halbmetall, double leitfaehigkeit) {
+		
+		setName(name);
+		setSymbol(symbol);
+		setKernladungszahl(kernladungszahl);
+		setSchale(schale);
+		setAggregat(aggregat);
+		setHauptgruppe(hauptgruppe);
 		setHalbmetall(halbmetall);
 		setLeitfaehigkeit(leitfaehigkeit);
-
+		
 	}
 
 	public boolean isHalbmetall() {
@@ -34,8 +42,7 @@ public class Metall {
 
 	@Override
 	public String toString() {
-		return "{ " + getClass().getSimpleName() + ", Halbmetall=" + halbmetall + ", Leitfaehigkeit=" + leitfaehigkeit
-				+ "}";
+		return super.toString() + ", \tHalbmetall=" + halbmetall + ", \tLeitfaehigkeit=" + leitfaehigkeit;
 	}
 
 }

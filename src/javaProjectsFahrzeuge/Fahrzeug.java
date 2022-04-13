@@ -25,7 +25,7 @@ public class Fahrzeug {
 
 	public void bewege(double anzahlMin) {
 
-		position = geschwindigkeit * (anzahlMin / 60);
+		position = getPosition()+geschwindigkeit * (anzahlMin / 60);
 
 	}
 

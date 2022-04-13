@@ -1,6 +1,6 @@
 package periodensystem;
 
-public class Element extends Metall{
+public class Element {
 	
 	private String name;
 	private String symbol;
@@ -26,20 +26,6 @@ public class Element extends Metall{
 		
 	}
 	
-
-	public Element(String symbol, String name,  int kernladungszahl, char schale, int aggregat, boolean hauptgruppe,
-			boolean halbmetall, double leitfaehigkeit) {
-		
-		super(halbmetall, leitfaehigkeit );
-		setName(name);
-		setSymbol(symbol);
-		setKernladungszahl(kernladungszahl);
-		setSchale(schale);
-		setAggregat(aggregat);
-		setHauptgruppe(hauptgruppe);
-		
-	}
-
 	public String getName() {
 		return name;
 	}
@@ -97,9 +83,8 @@ public class Element extends Metall{
 		String h=hauptgruppe ? "H" : "N";
 		
 		
-		return "{ "+getClass().getSimpleName()+ " Symbol=" + symbol +", Name=" + name +  ", OZ=" + kernladungszahl + ", Schale="
-				+ schale + ", Aggreg.=" + aggr + ", H/N=" + h + ", "
-						+ "Halbm.= " + isHalbmetall() + ", Leitfähigkeit=" + getLeitfaehigkeit() + " S/m }";
+		return getClass().getSimpleName()+ "   \tSymbol=" + symbol +", \tName=" + name +  ",              \tOZ=" + kernladungszahl + ",    \tSchale="
+				+ schale + ",     \tAggreg.=" + aggr + ",     \tH/N=" + h;
 	}
 
 	@Override

@@ -1,4 +1,4 @@
-package javaProjectsFahrzeuge;
+package javaProjects.Fahrzeuge;
 
 public class Auto extends Fahrzeug {
 

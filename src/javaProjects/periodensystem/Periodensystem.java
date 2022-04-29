@@ -1,4 +1,6 @@
-package periodensystem;
+package javaProjects.periodensystem;
+
+import java.util.Arrays;
 
 public class Periodensystem {
 
@@ -21,7 +23,7 @@ public class Periodensystem {
 
 		Element e2 = new Element("He", "Helium", 2, 'K', 3, true);
 		Element e3 = new Metall("Na", "Natrium", 11, 'M', 1, true, false, 21000000);
-		Element e4 = new Metall("Fe", "Eisen", 26, 'N', 1, false, false, 10020000);
+		Metall e4 = new Metall("Fe", "Eisen", 26, 'N', 1, false, false, 10020000);
 		Element e5 = new Metall("Ge", "Germanium", 32, 'N', 1, false, true, 1.45);
 		Element e6 = new Element("Br", "Brom", 35, 'N', 2, true);
 		Element e7 = new Metall("Te", "Tellur", 52, 'O', 1, true, true, 0.005);
@@ -36,8 +38,9 @@ public class Periodensystem {
 		elementArray[6] = e7;
 		elementArray[7] = e8;
 
-		System.out.println("************************** Periodensystem ****************************");// Tabellenüberschriften
-																										// erstellt
+		System.out.println("************************** Periodensystem ****************************");
+		
+		System.out.println(Arrays.toString(elementArray));
 		ausgabe(elementArray);
 		
 		System.out.println("\n\n***************** die Liste aller Metalle ***************** ");

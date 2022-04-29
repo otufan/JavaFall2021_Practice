@@ -1,4 +1,4 @@
-package periodensystem;
+package javaProjects.periodensystem;
 
 public class Element {
 	

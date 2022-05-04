@@ -16,7 +16,7 @@ public class PersonTest {
 		
 		Person person2 = new Person("Bill", "Mary", "1977");
 		Person person3 = new Person("Müller", "Fabienna", "1995");
-		Person person4 = new Person("Dicken", "Julia", "1999");
+		Person person4 = new Person("White", "Julia", "1999");
 
 		personArray.add(person);
 		personArray.add(person2);

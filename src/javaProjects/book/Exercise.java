@@ -44,7 +44,7 @@ public class Exercise {
 
 	public void part6() {
 		System.out.println("unsortiert");
-		List<Book> bA = new LinkedList<>(List.of(arrBook));
+		List<Book> bA = new ArrayList<>(List.of(arrBook));
 		aus(bA);
 
 		System.out.println("----------------------------------");
@@ -118,7 +118,7 @@ public class Exercise {
 
 	public void aus(List<Book> arr) {
 
-		Iterator iter = arr.iterator();
+		Iterator<Book> iter = arr.iterator();
 		while (iter.hasNext()) {
 			System.out.println(iter.next().toString());
 

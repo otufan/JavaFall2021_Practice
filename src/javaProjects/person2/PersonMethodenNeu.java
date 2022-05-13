@@ -1,10 +1,10 @@
-package javaProjects.person;
+package javaProjects.person2;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class PersonMethoden {
+public class PersonMethodenNeu {
 
 	public Person hinzufugen(ArrayList<Person> personArray) {
 
@@ -18,9 +18,9 @@ public class PersonMethoden {
 		person.setVorname(scan.nextLine());
 		System.out.println("Bitte geben Sie das Geburtsdatum ein ;");
 		person.setGeburtsdatum(scan.nextLine());
-
-		personArray.add(person);
 		
+		adresse(person);
+		personArray.add(person);
 		return person;
 
 	}
@@ -130,6 +130,21 @@ public class PersonMethoden {
 		if (!control) {
 			System.out.println("die eingegebene Nachname existiert nicht !");
 		}
+	}
+	
+	public void adresse(Person p) {
+		
+		Scanner scan=new Scanner(System.in);
+		
+		System.out.println("Bitte geben Sie die Straße ein : ");
+		p.setStrasse(scan.nextLine());
+		System.out.println("Bitte geben Sie die HausNr ein : ");
+		p.setHausNr(scan.nextLine());
+		System.out.println("Bitte geben Sie die PLZ ein : ");
+		p.setPlz(scan.nextLine());
+		System.out.println("Bitte geben Sie das Wohnort ein : ");
+		p.setWohnort(scan.nextLine());
+		
 	}
 
 	public void aus(ArrayList<Person> personArray) {
